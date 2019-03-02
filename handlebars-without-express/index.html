@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>handlebars</title>
+        <script src="./handlebars-v4.1.0.js"></script>
+    </head>
+    <body>
+        <header id="main_header"></header>
+
+
+        <script type="text/javascript">
+            const header = '<h1>Wellcom to my test number : {{number}}';
+            hBar = Handlebars.compile(header);
+            const content = hBar({number : '1'});
+            document.getElementById("main_header").innerHTML += content;
+        </script>
+    </body>
+</html> 
