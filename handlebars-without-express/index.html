@@ -9,7 +9,7 @@
 
 
         <script type="text/javascript">
-            const header = '<h1>Wellcom to my test number : {{number}}';
+            const header = '<h1>Welcome to my test number : {{number}}';
             hBar = Handlebars.compile(header);
             const content = hBar({number : '1'});
             document.getElementById("main_header").innerHTML += content;
